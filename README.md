@@ -30,7 +30,7 @@ Here are some of the projects that I’ve worked on during my journey:
 
 You can reach out to me through any of the following:
 
-- 📧 **Email**: [samir@email.com](mailto:shresthasamirss7@gmail.com)
+- 📧 **Email**: [shresthasamirss7@gmail.com](mailto:shresthasamirss7@gmail.com)
 - 🔗 **LinkedIn**: [https://linkedin.com/in/samir-shrestha-shre](https://linkedin.com/in/samir-shrestha-shre)
 
 ## 🌱 Future Goals
