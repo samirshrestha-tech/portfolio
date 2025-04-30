@@ -44,7 +44,18 @@ section{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+   
+
 }
+
+#projects{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 1.5rem;
+    
+}
+
+
 
 footer{
     text-align: center;
