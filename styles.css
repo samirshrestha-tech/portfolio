@@ -14,6 +14,23 @@ body{
 
 }
 
+.container{
+    display: grid;
+    grid-template-areas:
+     "header"
+     "home"
+     "about"
+     "projects"
+     "contact"
+     "footer"
+    ;
+     gap: 2rem;
+     max-width: 1100px;
+    margin: 0 auto;
+
+
+}
+
 header{
     background: #333;
     color: #fff;
@@ -21,21 +38,34 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-area: 'header';
+  flex-wrap: wrap;
+}
+#home{
+    grid-area: "home";
+}
+
+#about{
+    grid-area: "about";
+}
+
+#projects{
+    grid-area: "projects";
 }
 
 header h1{
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 nav a{
     color: #fff;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 1rem;
     font-weight: bold;
 }
 
 section{
-    margin: 40px 0;
+    margin: 1rem 0;
 }
 
 .project{
@@ -48,12 +78,17 @@ section{
 
 }
 
-#projects{
+.project-grid{
      display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
     gap: 1.5rem;
     
 }
+#about{
+    grid-area: "about";
+}
+
+
 
 
 
@@ -62,5 +97,24 @@ footer{
     margin-top: 50px;
     font-size: 14px;
     color: #777;
+    grid-area: "footer";
+}
+
+
+/* responsive design for mobiles and smaller devices */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 0.5rem 0 0 0;
+  }
+
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
 }
 
